@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>COHIMMS Chatbot</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+  <!-- MOBILE OVERLAY -->
+  <div id="overlay"></div>
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="sidebar-header">
+      <button id="menuBtn" class="menu-btn">☰</button>
+      <h2>COHIMMS</h2>
+    </div>
+
+    <button class="new-chat-btn" id="newChatBtn">+ New Chat</button>
+
+    <nav class="menu">
+      <ul>
+        <li>New Chat</li>
+        <li>Search Chats</li>
+        <li>Library</li>
+      </ul>
+
+      <h3>Chat History</h3>
+      <ul class="chat-list" id="chatList"></ul>
+    </nav>
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <main class="main">
+    <header class="chat-top">
+      <button id="menuBtnMobile" class="menu-btn mobile-only">☰</button>
+      <h1 class="title">What can I help with?</h1>
+    </header>
+
+    <!-- Chat messages -->
+    <section class="chat-area" id="chatArea"></section>
+
+    <!-- Input -->
+    <footer class="input-box">
+      <input
+        id="userInput"
+        type="text"
+        placeholder="Ask anything..."
+        autocomplete="off"
+      />
+      <button class="send-btn" id="sendBtn">➤</button>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
